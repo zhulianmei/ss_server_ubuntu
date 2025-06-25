@@ -1,4 +1,5 @@
 sudo apt install libev4 libc-ares2 libmbedtls-dev  -y
+chmod +x bin/ss-*
 cp bin/ss-* /usr/bin && /usr/bin/ss-manager -c /home/ubuntu/ss_server_ubuntu/config_mult_port.json >/home/ubuntu/ss_server_ubuntu/start_ss.log 2>&1 &
 
 echo '
